@@ -27,6 +27,20 @@
                             <x-input-error :messages="$errors->get('email')" class="mt-2" />
                         </div>
 
+                        <div class="mt-4">
+                            <x-input-label for="role" :value="__('role')" />
+                            <x-text-input id="role" class="block mt-1 w-full" type="role" name="role"
+                                :value="$user->role ?? old('role')" required autocomplete="username" />
+                            <x-input-error :messages="$errors->get('role')" class="mt-2" />
+                        </div>
+
+                        <div class="mt-4">
+                            <x-input-label for="status_akun" :value="__('status_akun')" />
+                            <x-text-input id="status_akun" class="block mt-1 w-full" type="status_akun" name="status_akun"
+                                :value="$user->status_akun ?? old('status_akun')" required autocomplete="username" />
+                            <x-input-error :messages="$errors->get('status_akun')" class="mt-2" />
+                        </div>
+
                         <!-- Password -->
                         <div class="mt-4">
                             <x-input-label for="password" :value="__('Password')" />

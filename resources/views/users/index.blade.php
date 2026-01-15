@@ -42,12 +42,7 @@
                                     <th scope="col" class="px-6 py-3 text-center">
                                         <span>Status</span>
                                     </th>
-                                    <th scope="col" class="px-6 py-3 text-center">
-                                        <span>No.Telp</span>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3 text-center">
-                                        <span>Alamat</span>
-                                    </th>
+                                    
                                     <th scope="col" class="px-6 py-3 text-center">
                                         <span>Action</span>
                                     </th>
@@ -72,12 +67,6 @@
                                         </td>
                                         <td class="px-6 py-2 text-center">
                                             {{ $user->status_akun }}
-                                        </td>
-                                        <td class="px-6 py-2 text-center">
-                                            {{ $user->no_telepon }}
-                                        </td>
-                                        <td class="px-6 py-2 text-center">
-                                            {{ $user->alamat }}
                                         </td>
                                         <td class="px-6 py-2 text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');"
